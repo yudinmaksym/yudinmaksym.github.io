@@ -276,7 +276,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	
+	font-family: Raleway, "Roboco", sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -386,7 +386,7 @@ textarea.form-control {
 }
 
 .start {
-	
+	font-family: Raleway, "Roboco", sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;

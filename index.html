@@ -31,7 +31,28 @@
 						</div>	
 					</div>
 					<div class="login_message">
-						<input type="button" value="message me" />
+						<a href="#openModal" class="modal_open_button">message me</a>
+						<div id="openModal" class="modalDialog">
+							<div class="modal_window">
+								<a href="#close" title="Закрыть" class="close">X</a>
+								<div class="modal_content">
+									<form>
+										<div><label for="email">E-mail:</label></div>
+										<div><input type="email" name="email" placeholder="E-mail" /></div>
+										
+										
+										<div><label for="name">Name:</label></div>
+										<div><input type="text" name="name" placeholder="Name"></div>
+										
+										
+										<div><label for="message">Message:</label></div>
+										<div><textarea name="message" placeholder="Your message"></textarea></div>
+										<input type="submit" name="send" value="SEND" class="modal_send_message">
+									</form>
+								</div>
+								
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -54,7 +75,7 @@
 	<!-- Section navigation -->
 		<nav>
 			<div class="wrapper">
-				<div class="menu_toogle"></div>
+				<div class="menu_toogle"><i class="fa fa-bars" aria-hidden="true"></i></div>
 				<ul>
 					<li class="with_border"><a href="#">Home</a></li>
 					<li class="dropdown with_border">
@@ -669,7 +690,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="send_me_button"><a href="">Send Mike a message</a></div>
+							<div class="send_me_button"><a href="#openModal">Send Mike a message</a></div>
 							<div class="about_info_achiev">
 								<div class="row">
 									<div><img src="img/achieve1.png" /></div>
@@ -694,6 +715,7 @@
 	<script src="js/slick.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/map.js"></script>
+	<script src="js/menu_script.js"></script>
 	
 	<script type="text/javascript">
     $(document).ready(function(){

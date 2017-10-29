@@ -617,6 +617,7 @@
 			</div>
 		</div>
 		<!-- MODAL WINDOW END -->
+
 	</div>	
 
 	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
@@ -641,6 +642,71 @@
 		  variableWidth: true
 		});
 	</script>
+	<script type="text/javascript">
+		
+	$(document).ready(function(){
+	$('<link rel="stylesheet" href="css/uved.css">').appendTo('head');
+
+	var i = 0;
+	function yved(){
+	i=1;
+	$('.yved:nth-child('+i+')').fadeIn(500).delay(5000).fadeOut(500);//В этой строчке в мс 500 - время анимации появления, 5000 - время задержки, 500 - время затухания уведомления соответсвенно
+	}
+	setTimeout(function(){
+	setInterval(
+	function(){
+		i=i+1;
+		if(i>10) i=1;// количество уведомлений
+		$('.yved:nth-child('+i+')').fadeIn(500).delay(5000).fadeOut(500);//В этой строчке в мс 500 - время анимации появления, 5000 - время задержки, 500 - время затухания уведомления соответсвенно
+		},30000);//25000 - задержка в мс между показами уведомлений
+		yved();
+		},10000);//10000 - задержка в мс перед показом первого уведомления
+	});
+
+	</script>
+	<!-- UVED -->
+		<div class="yvedw">
+			<div class="yved yvedf1" style="display: none;">
+			<img src="img/yico1.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Марина Авдеевa <br>г. <span class="geocity"></span>,<br> только что заказал(а) Бюстгальтер Fly Bra	   на 349 грн..</div></div>
+		</div>
+			<div class="yved yvedf1" style="display: none;">
+			<img src="img/yico1.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Светлана Маланюк <br>г. Николаев,<br> только что заказал(а) Бюстгальтер Fly Bra	   на 349 грн..</div></div>
+		</div>
+			
+			<div class="yved yvedf2" style="display: none;">
+			<img src="img/yico2.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Карина Авдеевa <br>г. Полтава,<br> оставил(а) заявку на обратный звонок.</div></div>
+		</div>
+			<div class="yved yvedf2" style="display: none;">
+			<img src="img/yico2.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Наталья Рубан <br>г. Николаев,<br> оставил(а) заявку на обратный звонок.</div></div>
+		</div>
+			<div class="yved yvedf1" style="display: none;">
+			<img src="img/yico1.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Мирослава Сазоненко <br>г. Харьков,<br> только что заказал(а) Бюстгальтер Fly Bra	   на 349 грн..</div></div>
+		</div>
+			<div class="yved yvedf1" style="display: none;">
+			<img src="img/yico1.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Виктория Лещенко <br>г. Ивано-Франковск,<br> только что заказал(а) Бюстгальтер Fly Bra	   на 349 грн..</div></div>
+		</div>
+			<div class="yved yvedf1" style="display: none;">
+			<img src="img/yico1.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Валерия Гузенко <br>г. Чернигов,<br> только что заказал(а) Бюстгальтер Fly Bra	   на 349 грн..</div></div>
+		</div>
+			<div class="yved yvedf2" style="display: none;">
+			<img src="img/yico2.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Александра Тимошенко <br>г. Белая Церковь,<br> оставил(а) заявку на обратный звонок.</div></div>
+		</div>
+			<div class="yved yvedf1" style="display: none;">
+			<img src="img/yico1.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Дарья Бутенко <br>г. Ровно,<br> только что заказал(а) Бюстгальтер Fly Bra	   на 349 грн..</div></div>
+		</div>
+			
+	</div>
+		<!-- UVED -->
+	
 	<!-- <script type="text/javascript">
 		$(document).mouseup(function (e) {
 		    var container = $(".modalDialog");

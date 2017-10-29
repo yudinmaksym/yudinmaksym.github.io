@@ -15,7 +15,7 @@ $name = trim($name);
 $phone = trim($phone);
 
 
-mail("4ygakk@gmail.com", "Заявка с сайта", "\r\n Имя:".$name. "\r\nТелефон:".$phone);
+mail("4ygakk@gmail.com", "Заявка с сайта", "Имя:".$name.". Телефон: ".$phone ,"From: example2@mail.ru \r\n");
 ?>
 
 
